@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>my-budget</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <div class="title"> 可用钱数:</div>
+            <div class="value">+100</div>
+            <div class="inc clearfix">
+                <div class="inc-text">收入 </div>
+                <div class="right">
+                    <div class="inc-value"> +20</div>
+                    <div class="inc-percentage">&nbsp</div>
+                </div>
+            </div>
+            <div class="exp clearfix">
+                    <div class="exp-text">支出 </div>
+                    <div class="right">
+                    <div class="exp-value"> -20</div>
+                    <div class="exp-percentage">20%</div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="bottom">
+        <div class="add-container">
+           <select class="add-type">
+               <option value="inc">+</option>
+               <option value="exp">-</option>
+           </select > 
+           <input class="add-description" type="text"  placeholder="用处">
+           <input class="add-value" type="number" placeholder="金额">
+            <button class="add-btn">新增</button>
+        </div>
+    </div>
+        <div class="bottom-container clearfix">
+            <div class="type-container">
+                <div class="income">
+                    <h2 class="income-title"> 收入 </h2>
+                    <div class="income-list">
+                        <!--<div class="item clearfix" id="inc-1">
+                            <div class="item-description">坐车</div>
+                            <div class="item-right clearfix">
+                                <div class="item-value">10</div>
+                                <div class="item-delete">
+                                    删除
+                                </div>
+                            </div>
+                        </div>-->
+                    </div>
+                </div>
+                <div class="expense">
+                    <h2 class="expense-title"> 支出</h2>
+                    <div class="expense-list">
+                        <!--<div class="item clearfix" id="exp-0">
+                            <div class="item-description">
+                                上网
+                            </div>
+                            <div class="right clearfix">
+                                <div class="item-value">-10</div>
+                                <div class="item-percentage">-10%</div>
+                                <div class="item-delete">删除</div>
+                            </div>
+                        </div>-->
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+</body>
+
+</html>

@@ -1,0 +1,184 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  height: 40vh;
+  position: relative;
+}
+
+.header-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 350px;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 25px;
+}
+
+.value {
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.clearfix::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.inc {
+  background: rgba(40, 185, 181, 1);
+  padding: 12px;
+  margin-bottom: 10px;
+}
+
+.exp {
+  background: rgba(255, 80, 73, 1);
+  padding: 12px;
+}
+
+.exp-text,
+.inc-text {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.exp-value,
+.inc-value {
+  float: left;
+}
+
+.exp-percentage,
+.inc-percentage {
+  float: left;
+  text-align: center;
+  width: 55px;
+}
+
+.bottom {
+  background: rgba(247, 247, 247, 1);
+  padding: 5px;
+}
+
+.add-container {
+  text-align: center;
+}
+
+.add-type {
+  width: 55px;
+  height: 44px;
+  background-color: #fff;
+  font-size: 18px;
+}
+
+.add-description {
+  padding: 14px;
+  margin-left: 10px;
+  margin-right: 10px;
+  border-radius: 5px;
+}
+
+.add-value {
+  padding: 14px;
+  border-radius: 5px;
+}
+
+.add-btn {
+  padding: 14px;
+  border-radius: 5px;
+  margin-left: 10px;
+}
+
+.income h2,
+.expense h2 {
+  margin-bottom: 10px;
+}
+
+.income h2 {
+  color: rgba(40, 185, 181, 1);
+}
+
+.expense h2 {
+  color: rgba(255, 80, 73, 1);
+}
+
+.item {
+  padding: 13px;
+  border-bottom: 1px solid black;
+}
+
+.item:first-child {
+  border-top: 1px solid black;
+}
+
+.bottom-container {
+  width: 1000px;
+  margin: 60px auto;
+  text-align: center;
+}
+
+.type-container {
+  display: inline-block;
+}
+
+.income {
+  width: 475px;
+  float: left;
+  margin-right: 50px;
+}
+
+.item-description {
+  float: left;
+}
+
+.item-right {
+  float: right;
+}
+
+.item-delete {
+  display: none;
+}
+
+.item-value {
+  margin-top: 3px;
+  float: left;
+  transition: transform 0.4s linear;
+}
+
+.item:hover .item-value {
+  float: left;
+  margin-right: 5px;
+  margin-top: 3px;
+  transform: translate(-8px);
+}
+
+.item:hover .item-delete {
+  cursor: pointer;
+  float: left;
+  display: block;
+}
+
+.expense {
+  width: 475px;
+  float: left;
+}
+
+.item-percentage {
+  float: left;
+  margin-top: 3px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
